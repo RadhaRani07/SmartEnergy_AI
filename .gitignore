@@ -1,0 +1,30 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary test input
+data/prediction_test_input.csv
+
+# OS and editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Private and source datasets
+data/
+
+# Keep only the official model evaluation report
+reports/*
+!reports/ridge_model_test_evaluation.json

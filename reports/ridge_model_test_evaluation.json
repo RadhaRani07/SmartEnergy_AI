@@ -1,0 +1,43 @@
+{
+    "project": "SmartEnergy AI",
+    "model": "Ridge Regression",
+    "alpha": 0.01,
+    "preprocessing": "StandardScaler",
+    "features": [
+        "lag_1",
+        "lag_24",
+        "lag_168",
+        "rolling_mean_24",
+        "hour",
+        "day_of_week",
+        "month",
+        "is_weekend"
+    ],
+    "dataset": "SmartEnergy_1H_Forecasting_Dataset_v2.parquet",
+    "training_rows": 13612,
+    "test_rows": 2410,
+    "test_period_start": "2021-09-01 00:00:00",
+    "test_period_end": "2021-12-31 23:00:00",
+    "metrics": {
+        "RIDGE": {
+            "MAE": 44031.47596820186,
+            "RMSE": 119465.42190887449,
+            "MAPE_percent": 2.839991570528747,
+            "WAPE_percent": 3.010538145521452
+        },
+        "PERSISTENCE": {
+            "MAE": 50153.11203319502,
+            "RMSE": 126016.99293994662,
+            "MAPE_percent": 3.2127880010249874,
+            "WAPE_percent": 3.4290891588913173
+        },
+        "SEASONAL_NAIVE": {
+            "MAE": 59713.128630705396,
+            "RMSE": 132356.5224087932,
+            "MAPE_percent": 3.977131388367696,
+            "WAPE_percent": 4.082730537150082
+        }
+    },
+    "reproduction_check": "PASS",
+    "model_artifact": "models\\ridge_energy_forecasting_v1.joblib"
+}
