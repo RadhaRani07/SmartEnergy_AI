@@ -185,6 +185,27 @@ Important limitations:
 
 **Current status:** Working forecasting prototype.
 
+
+## 🚀 Live Demo
+
+Try the SmartEnergy AI application here:
+
+🔗 **[Launch SmartEnergy AI](https://smartenergyai-wr6xhnm8n9k6dskdphueuv.streamlit.app/)**
+
+The application allows users to:
+- Upload hourly energy data in CSV or Parquet format.
+- View historical energy demand.
+- Generate a one-hour-ahead energy demand forecast.
+- Download forecast results.
+
+**Input Requirements:**
+- File format: CSV or Parquet
+- Required columns: `Timestamp` and `Total`
+- Minimum history: 168 continuous hourly observations.
+
+**Model:** Ridge Regression
+
+
 The Ridge model has been trained, saved, reloaded, and tested through a one-hour-ahead prediction pipeline.
 
 ---
